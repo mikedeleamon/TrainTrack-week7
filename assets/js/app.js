@@ -43,6 +43,8 @@ $(document).ready(function(){
  		var destination = childSnapshot.val().Destinaton;
  		var trainStart = childSnapshot.val().StartTime;
  		var trainFreq = childSnapshot.val().Frequency;
+    
+    // push train info to table
     $("tInfoDisplay").append("<tr><td>"+trainName+"</td>","<td>"+destination+"</td>","<td>"+trainStart+"</td>","<td>"+nTrain+"</td>","<td>"+trainFreq+"</td></tr>");
  })
 
