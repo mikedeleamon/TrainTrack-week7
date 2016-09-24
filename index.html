@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+	<title> Train Tracker</title>
+</head>
+<body>
+	<div class="container">
+
+		<nav class="navbar navbar-default fixed-top">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      Employee Management
+		      <ul class="nav navbar-nav">
+		      <li class="active"><a href="#"></a>Home</li>
+		      <li>About</li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+
+	<div class="jumbotron">
+		<h1>Train Tracker</h1>
+		<h4>Where we Track Trains</h4>
+	</div>
+	<div class="panel panel-success">
+		  <!-- Default panel contents -->
+		  <div class="panel-heading">Current Trains</div>
+		  <div class="panel-body">
+		    <p>Here we display Train info </p>
+		  </div>
+
+		  <!-- Table -->
+		  <table class="table">
+		    <thead>
+                <tr>
+                    <th>Train Name</th>
+                    <th>Destinaton</th>
+                    <th>Start Time</th>
+                    <th>Next Train</th>
+                    <th>Frequency</th>
+                    
+                </tr>
+              </thead>
+              <tbody class="tInfoDisplay"></tbody>
+		   </table>
+		</div>
+<div class="panel panel-success">
+		  <!-- Default panel contents -->
+		  <div class="panel-heading">Add Train</div>
+
+				<div class="panel-body">
+						<form role="form">
+
+						  <div class="form-group">
+						    <label for="tName">Train Name</label>
+						    <input type="text" class="form-control" id="tName">
+						  </div>
+							<div class="form-group">
+							    <label for="destination">Destnation:</label>
+								 <input type="text" class="form-control" id="destination">
+							 </div>
+							<div class="form-group">
+							  <label for="tStart">Enter Start time</label>
+							  <input type="number" class="form-control" id="tStart">
+							</div>
+
+						  <div class="form-group">
+						    <label for="freq">Train Frequency:</label>
+						    <input type="text" class="form-control" id="freq" >
+						    <!--required data-validation-required-message-->
+						  </div>
+
+						  
+
+						  <button type="submit" class="btn btn-success" id="trainInfo">Enter</button>
+  						  
+
+			
+                    </div>
+                    
+                 	</form>
+                 </div>
+               </div>
+                        
+		
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
